@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HPAutoLayout.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    UIView *myView = [UIView create];
+    myView.backgroundColor = [UIColor lightGrayColor];
+    [self.view addSubview:myView];
+    [myView.top addEqualConstraint:self.view.top multiplier:1.f constant:20];
+    [myView.left addEqualConstraint:self.view.left multiplier:1.f constant:10];
+    [myView.right addEqualConstraint:self.view.right multiplier:1.f constant:-10];
+    [myView.height addEqualConstraint:self.view.height multiplier:0.5 constant:0];
+    
+    
+    
 }
 
 

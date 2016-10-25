@@ -15,6 +15,8 @@
 		7B163A291DACBAA400696280 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B163A271DACBAA400696280 /* LaunchScreen.storyboard */; };
 		7B163A341DACBAA400696280 /* HPAutoLayout_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B163A331DACBAA400696280 /* HPAutoLayout_demoTests.m */; };
 		7B163A3F1DACBAA400696280 /* HPAutoLayout_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B163A3E1DACBAA400696280 /* HPAutoLayout_demoUITests.m */; };
+		7B163A511DACBAD200696280 /* AutoLayoutObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B163A4E1DACBAD200696280 /* AutoLayoutObject.m */; };
+		7B163A521DACBAD200696280 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 7B163A501DACBAD200696280 /* UIView+AutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		7B163A3A1DACBAA400696280 /* HPAutoLayout_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPAutoLayout_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B163A3E1DACBAA400696280 /* HPAutoLayout_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HPAutoLayout_demoUITests.m; sourceTree = "<group>"; };
 		7B163A401DACBAA400696280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B163A4D1DACBAD200696280 /* AutoLayoutObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AutoLayoutObject.h; sourceTree = "<group>"; };
+		7B163A4E1DACBAD200696280 /* AutoLayoutObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AutoLayoutObject.m; sourceTree = "<group>"; };
+		7B163A4F1DACBAD200696280 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		7B163A501DACBAD200696280 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		7B163A531DACBB0700696280 /* HPAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPAutoLayout.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +110,7 @@
 			children = (
 				7B163A1C1DACBAA400696280 /* AppDelegate.h */,
 				7B163A1D1DACBAA400696280 /* AppDelegate.m */,
+				7B163A4C1DACBAB800696280 /* HPAutoLayout */,
 				7B163A1F1DACBAA400696280 /* ViewController.h */,
 				7B163A201DACBAA400696280 /* ViewController.m */,
 				7B163A221DACBAA400696280 /* Main.storyboard */,
@@ -138,6 +146,18 @@
 				7B163A401DACBAA400696280 /* Info.plist */,
 			);
 			path = HPAutoLayout_demoUITests;
+			sourceTree = "<group>";
+		};
+		7B163A4C1DACBAB800696280 /* HPAutoLayout */ = {
+			isa = PBXGroup;
+			children = (
+				7B163A4D1DACBAD200696280 /* AutoLayoutObject.h */,
+				7B163A4E1DACBAD200696280 /* AutoLayoutObject.m */,
+				7B163A4F1DACBAD200696280 /* UIView+AutoLayout.h */,
+				7B163A501DACBAD200696280 /* UIView+AutoLayout.m */,
+				7B163A531DACBB0700696280 /* HPAutoLayout.h */,
+			);
+			name = HPAutoLayout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +293,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B163A521DACBAD200696280 /* UIView+AutoLayout.m in Sources */,
 				7B163A211DACBAA400696280 /* ViewController.m in Sources */,
 				7B163A1E1DACBAA400696280 /* AppDelegate.m in Sources */,
 				7B163A1B1DACBAA400696280 /* main.m in Sources */,
+				7B163A511DACBAD200696280 /* AutoLayoutObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
